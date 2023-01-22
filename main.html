@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Navbar Animation</title>
+    <link rel="stylesheet" href="stylesheet/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <h3 class="logo">Brand<span>Name</span></h3>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main">
+          <header>
+            <div class="overlay">
+              <div class="inner">
+                <h2 class="title">UzEduLine</h2>
+                <p>
+                  Bu O'zbekistondagi onlayn ta'lim tizimini yangi darajaga olib chiqish uchun yaratilgan platforma bo'lib, iste'molchi uchun qulay yo'llar bilan onlayn tarda har bir yosh vakiliga bilim berishga harakat qiladi.
+                </p>
+                <!-- <button class="btn">Read more</button> -->
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul class="navbar1">
+          <li>
+            <a href="main.html" style="--i: 0.05s;" class="a1">Bosh sahifa</a>
+          </li>
+          <li>
+            <a href="OrientationSphere.html" style="--i: 0.1s;" class="a2">Yo'nalish tanlash</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.15s;" class="a3">Kutubxona</a>
+          </li>
+          <li>
+            <a href="checking.html" style="--i: 0.2s;" class="a4">yo'nalishni aniqlash</a>
+          </li>
+          <li>
+            <a href="aboutUs.html" style="--i: 0.25s;" class="a5">Sayt haqida ma'lumot</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.3s;" class="a6">Bog'lanish</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+        const hamburger_menu = document.querySelector(".hamburger-menu");
+        const container = document.querySelector(".container");
+        hamburger_menu.addEventListener("click", () => {
+        container.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
